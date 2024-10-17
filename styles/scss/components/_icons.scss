@@ -1,0 +1,79 @@
+.icon {
+  transition: 0.2s ease;
+  fill: var(--page-background-color);
+
+  &__type_socials {
+    width: 35px;
+    height: 35px;
+
+    &:hover {
+      fill: var(--price-color);
+    }
+    @media screen and (max-width: 375px) {
+      width: 20px;
+    }
+    @media screen and (max-width: 576px) {
+      width: 30px;
+    }
+  }
+
+  &__type_submit {
+    stroke: var(--page-background-color);
+    width: 40px;
+    height: auto;
+
+    @media screen and (max-width: 576px) {
+      width: 30px;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 20px;
+    }
+  }
+
+  &__type_buy {
+    stroke: var(--section-background-color);
+    width: 30px;
+    height: auto;
+
+    @media screen and (max-width: 576px) {
+      width: 30px;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 20px;
+    }
+  }
+
+  &__type_slider-nav {
+    width: 53px;
+    height: auto;
+
+    @media screen and (max-width: 576px) {
+      width: 30px;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 20px;
+    }
+  }
+
+  &__type_popover {
+    fill: transparent;
+    stroke: var(--section-background-color);
+    stroke-width: 4;
+    width: 60px;
+    height: auto;
+
+    &:hover {
+      fill: var(--page-background-color);
+
+      .circle {
+        fill: var(--section-background-color);
+      }
+    }
+    @media screen and (max-width: 375px) {
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,219 @@
+.main {
+  flex: 1 1 auto;
+}
+
+.section {
+  &__subtitle {
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
+  }
+}
+
+.chapters {
+  color: var(--page-background-color);
+
+  &__men {
+    background: url(../../../images/man.png);
+  }
+
+  &__women {
+    background: url(../../../images/woman.png);
+  }
+
+  &__men,
+  &__women {
+    width: 49%;
+    padding: 230px 0 !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 993px) {
+      padding: 150px 0 !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 100px 0 !important;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      padding: 50px 0 !important;
+    }
+  }
+
+  .divider {
+    width: 130px;
+    height: 4px;
+    opacity: 1;
+  }
+}
+
+.map {
+  background: var(--section-background-color);
+
+  .section {
+    &__title {
+      color: var(--page-background-color);
+    }
+  }
+
+  .card {
+    height: 500px;
+    padding: 100px 0;
+
+    &__text {
+      color: var(--page-background-color);
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 400px;
+    }
+  }
+
+  &__iframe {
+    @media screen and (max-width: 576px) {
+      height: 300px;
+    }
+  }
+
+  &__popover {
+    &:nth-of-type(1) {
+      top: 15%;
+      left: 25%;
+    }
+
+    &:nth-of-type(2) {
+      top: 25%;
+      left: 45%;
+    }
+
+    &:nth-of-type(3) {
+      top: 40%;
+      left: 65%;
+    }
+
+    &:nth-of-type(4) {
+      top: 60%;
+      left: 55%;
+    }
+  }
+}
+
+.products {
+  .card {
+    cursor: pointer;
+    padding: 50px;
+    background: #ededed;
+
+    &__text {
+      color: var(--dark-card-text-color);
+    }
+
+    @media screen and (max-width: 576px) {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+}
+
+.slider {
+  background: var(--section-background-color);
+
+  .section {
+    &__title {
+      color: var(--page-background-color);
+      @media screen and (max-width: 375px) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__image {
+    width: auto;
+    max-height: 385px;
+    height: 100%;
+
+    @media screen and (max-width: 1400px) {
+      max-height: 305px;
+    }
+
+    @media screen and (max-width: 993px) {
+      max-height: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-height: 150px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-height: 150px;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-height: 110px;
+    }
+  }
+
+  &__nav {
+    .icon {
+      stroke: var(--page-background-color);
+    }
+  }
+
+  &__prev {
+    transform: rotateY(180deg);
+  }
+}
+
+.contacts {
+  height: 650px;
+
+  &__image {
+    background: url(../../../images/contacts.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 768px) {
+      height: 500px;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 300px;
+    }
+  }
+
+  &__info {
+    padding: 180px 0 !important;
+
+    @media screen and (max-width: 576px) {
+      height: 300px;
+      padding: 50px 0 !important;
+    }
+    
+  }
+
+  .card {
+    height: 80px;
+
+    &__link {
+      font-family: var(--futura-font-family);
+      font-style: normal;
+    }
+  }
+
+  .form {
+    &-control {
+      border-color: var(--section-background-color) !important;
+
+    }
+  }
+
+  .icon {
+    stroke: var(--section-background-color);
+  }
+
+  @media screen and (max-width: 576px) {
+    height: 100%;
+  }
+}

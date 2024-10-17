@@ -1,0 +1,38 @@
+.footer {
+  background: var(--section-background-color);
+
+  .nav {
+    &-link {
+      color: var(--page-background-color);
+      @media screen and (max-width: 375px) {
+        font-size: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  .card {
+    &__title {
+      color: var(--page-background-color);
+    }
+
+    &__link {
+      font-family: var(--futura-font-family);
+      font-style: normal;
+    }
+  }
+}
+
+.stores {
+  &__item {
+    height: 30px;
+    width: auto;
+    @media screen and (max-width: 375px) {
+      height: 21px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,81 @@
+.header {
+  min-height: 75vh;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(39, 39, 39, 1) 30%
+  );
+
+  &__menu {
+    width: 65%;
+
+    &-list {
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    width: 35%;
+    min-width: 200px;
+    text-align: end;
+
+    @media screen and (max-width: 768px) {
+      width: 30%;
+    }
+  }
+
+  &__ring {
+    max-width: 320px;
+
+    @media screen and (max-width: 993px) {
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 993px) {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 60%,
+      rgba(39, 39, 39, 1) 40%
+    );
+  }
+}
+
+.navbar {
+  &-toggler {
+    padding: 0;
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.collection {
+  .card {
+    width: 75%;
+
+    &__title {
+      font-size: var(--title-font-size);
+    }
+
+    &__link {
+      font-style: italic;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 2px;
+        top: 50%;
+        left: -110px;
+        background: var(--section-background-color);
+      }
+    }
+
+    @media screen and (max-width: 993px) {
+      width: 100%;
+    }
+  }
+}

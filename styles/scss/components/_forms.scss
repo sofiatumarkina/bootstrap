@@ -1,0 +1,33 @@
+.form {
+  &-control {
+    border-bottom: 1px solid var(--page-background-color) !important;
+    &:focus {
+      box-shadow: none;
+      border: none;
+    }
+
+
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+}
+
+input {
+  position: relative;
+  color: var(--dark-card-text-color) !important;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+
+  &::placeholder {
+    color: var(--dark-card-text-color) !important;
+  }
+}
+
+.invalid-feedback {
+  color: var(--price-color);
+}

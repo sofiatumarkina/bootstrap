@@ -1,0 +1,91 @@
+.card {
+  border: none;
+  border-radius: 0;
+  background: none;
+
+  &__type_header {
+    .card {
+      &__title {
+        color: var(--page-background-color);
+      }
+
+      &__text {
+        color: var(--light-card-text-color);
+      }
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 13px;
+    }
+  }
+
+  &__type_main-product {
+    color: var(--page-backgorund-color);
+    background: center / cover no-repeat
+      url(../../../images/cards/card-product-5.png) !important;
+ 
+    .card {
+      &__title {
+        color: var(--page-background-color);
+        @media screen and (max-width: 575px) {
+          color: var(--card-title-font-size);
+          font-size: 15px;
+        }
+      }
+
+      &__text {
+        color: var(--light-card-text-color);
+        @media screen and (max-width: 575px) {
+          color: var(--card-title-font-size);
+          font-size: 15px;
+        }
+
+      }
+    }
+
+    @media screen and (max-width: 993px) {
+      padding: 100px 50px !important;
+      background-position: bottom !important;
+    }
+  }
+
+  &__image {
+    max-height: 163px;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  &__title {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__title,
+  &__text {
+    font-family: var(--futura-font-family);
+    font-size: var(--card-title-font-size);
+  }
+
+  &__price {
+    font-family: var(--segoe-font-family);
+    font-style: italic;
+    color: var(--price-color);
+    @media screen and (max-width: 375px) {
+      font-size: 10px;
+    }
+    @media screen and (max-width: 575px) {
+      color: var(--card-title-font-size);
+      font-size: 15px;
+    }
+    
+  }
+
+  &__link {
+    color: var(--dark-card-text-color);
+    font-family: var(--segoe-font-family);
+    position: relative;    
+    @media screen and (max-width: 375px) {
+      font-size: 12px;
+    }
+  }
+}

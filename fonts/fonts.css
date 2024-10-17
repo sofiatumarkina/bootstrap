@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url(./Segoe\ UI\ Italic.woff2) format('woff2'), url(./Segoe\ UI\ Italic.woff) format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
